@@ -113,46 +113,45 @@ def split_deeply(tokenized_list):
    
     return  new_tokenized_list
 
-if __name__=="__main__":
-    import json
-    # with open("./dataset/training_data.json","r") as f:
-    #     facts=json.load(f)
-    # max_semantic_num=-1
-    # for sample in facts:
-    #     for key in sample:
-    #         fact=sample[key]
-    #         tokenized_semantic_token,semantic_pos_list=extract_semantic_info(sample[key])
-    #         temp_len=len(semantic_pos_list)
-    #         if fact["fact_type"]=="rank":
-    #             if not isinstance(fact["meta"],list):
-    #                 if fact["meta"]=="":
-    #                     fact["fact_type"]="distribution"
-    #                 else:
-    #                     fact["meta"]=fact["meta"].split(",")
-    #                 print(fact["fact_id"])
+# if __name__=="__main__":
+#     import json
+#     # with open("./dataset/training_data.json","r") as f:
+#     #     facts=json.load(f)
+#     # max_semantic_num=-1
+#     # for sample in facts:
+#     #     for key in sample:
+#     #         fact=sample[key]
+#     #         tokenized_semantic_token,semantic_pos_list=extract_semantic_info(sample[key])
+#     #         temp_len=len(semantic_pos_list)
+#     #         if fact["fact_type"]=="rank":
+#     #             if not isinstance(fact["meta"],list):
+#     #                 if fact["meta"]=="":
+#     #                     fact["fact_type"]="distribution"
+#     #                 else:
+#     #                     fact["meta"]=fact["meta"].split(",")
+#     #                 print(fact["fact_id"])
 
-    #         if temp_len>max_semantic_num:
-    #             max_semantic_num=temp_len
-    # write_json_list("./dataset/cleaned_training_data.json",facts)
-    # print(extract_semantic_info(facts[0]))
-    # print("最长语义数",max_semantic_num)
+#     #         if temp_len>max_semantic_num:
+#     #             max_semantic_num=temp_len
+#     # write_json_list("./dataset/cleaned_training_data.json",facts)
+#     # print(extract_semantic_info(facts[0]))
+#     # print("最长语义数",max_semantic_num)
 
-    with open("./dataset/sub_training_data.json","r",encoding="utf-8") as f:
-        facts=json.load(f)
-    max_semantic_num=-1
-    for fact in facts:
-        tokenized_semantic_token,semantic_pos_list=extract_semantic_info(fact)
-        if fact["fact_type"]=="rank":
-            if not isinstance(fact["meta"],list):
-                if fact["meta"]=="":
-                    fact["fact_type"]="distribution"
-                else:
-                    fact["meta"]=fact["meta"].split(",")
-                print(fact["fact_id"])
+#     with open("./dataset/sub_training_data.json","r",encoding="utf-8") as f:
+#         facts=json.load(f)
+#     max_semantic_num=-1
+#     for fact in facts:
+#         tokenized_semantic_token,semantic_pos_list=extract_semantic_info(fact)
+#         if fact["fact_type"]=="rank":
+#             if not isinstance(fact["meta"],list):
+#                 if fact["meta"]=="":
+#                     fact["fact_type"]="distribution"
+#                 else:
+#                     fact["meta"]=fact["meta"].split(",")
+#                 print(fact["fact_id"])
 
-        temp_len=len(semantic_pos_list)
-        if temp_len>max_semantic_num:
-            max_semantic_num=temp_len
-    
-            # print(fact["fact_id"],tokenized_semantic_token)
-    print("最长语义数",max_semantic_num)
+#         temp_len=len(semantic_pos_list)
+#         if temp_len>max_semantic_num:
+#             max_semantic_num=temp_len
+#             print(fact["fact_id"],tokenized_semantic_token)
+#     print("最长语义数",max_semantic_num)

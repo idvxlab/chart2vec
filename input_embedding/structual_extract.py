@@ -14,10 +14,11 @@ def fact_format(fact):
 
     if fact['breakdown']:
         new_fact['breakdown'] = {}
-        if 'type' in fact['breakdown'][0].keys():
-            new_fact['breakdown']['field'] = fact['breakdown'][0]['type']
+        if len(fact['breakdown']) == 1:
+            new_fact['breakdown']['len'] = "1"
         else:
-            new_fact['breakdown'] = None
+            new_fact['breakdown']['len'] = '>1'
+        new_fact['breakdown']['field'] = fact['breakdown'][0]['type']
     else:
         new_fact['breakdown'] = None
 
@@ -31,7 +32,11 @@ def fact_format(fact):
         new_fact['measure']['field'] = fact['measure'][0]['type']
         new_fact['measure']['aggregate'] = fact['measure'][0]['aggregate']
         if 'subtype' in fact['measure'][0].keys():
-            new_fact['measure']['subtype'] = fact['measure'][0]['subtype']
+            temp_subtype=fact['measure'][0]['subtype']
+            if temp_subtype=="none":
+                new_fact['measure']['subtype'] = None
+            else:
+                new_fact['measure']['subtype'] = temp_subtype
         else:
             new_fact['measure']['subtype'] = None
     else:
@@ -53,7 +58,6 @@ def fact_format(fact):
     if fact['focus']:
         new_fact['focus'] = {}
         if len(fact['focus']) == 1:
-
             new_fact['focus']['len'] = "1"
         else:
             new_fact['focus']['len'] = '>1'
@@ -96,7 +100,6 @@ def extract_structual_info(fact):
     fact_rules= [] 
     fact=fact_format(fact)
     get_rules(fact, 'root', fact_rules)
-    return len(fact_rules),fact_rules
     
     one_hot = np.zeros((MAX_STRUCT_FEATURE_LEN, len(total_rules)), dtype=np.float32)
     indices = [rule2index[r] for r in fact_rules]
@@ -105,24 +108,24 @@ def extract_structual_info(fact):
 
     return one_hot
 
-if __name__=="__main__":
-    with open("./dataset/training_data.json","r") as f:
-        facts=json.load(f)
-    # 设置打印选项，将所有结果打印出来
-    np.set_printoptions(threshold=np.inf)
-    max_struct=-1
-    chart_types=[]
-    for sample in facts:
-        for key in sample:
-            # try:
-                rules_len,fact_rules=extract_structual_info(sample[key])
-                chart=sample[key]["chart_type"]
-                if chart not in chart_types:
-                    chart_types.append(chart)
-                if rules_len>max_struct:
-                    max_struct=rules_len
-                    print(fact_rules)
-            # except:
-                # print(sample[key]["fact_id"])
-    print("最长规则数：",max_struct)
-    print(chart_types,len(chart_types))
+# if __name__=="__main__":
+#     with open("./dataset/training_data.json","r") as f:
+#         facts=json.load(f)
+#     # 设置打印选项，将所有结果打印出来
+#     np.set_printoptions(threshold=np.inf)
+#     max_struct=-1
+#     chart_types=[]
+#     for sample in facts:
+#         for key in sample:
+#             # try:
+#                 rules_len,fact_rules=extract_structual_info(sample[key])
+#                 chart=sample[key]["chart_type"]
+#                 if chart not in chart_types:
+#                     chart_types.append(chart)
+#                 if rules_len>max_struct:
+#                     max_struct=rules_len
+#                     print(fact_rules)
+#             # except:
+#                 # print(sample[key]["fact_id"])
+#     print("最长规则数：",max_struct)
+#     print(chart_types,len(chart_types))

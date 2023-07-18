@@ -19,7 +19,7 @@ from encoder.ImprovedQuadrupletLoss import *
 
 
 def train_chart2vec():
-    combine_name = "modules-words-max-pooling"
+    combine_name = "modules-test"
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # get current time, used for create folders
     current_time = time.strftime(
@@ -91,7 +91,7 @@ def train_chart2vec():
                 training_model_folder_path, ttt+"-"+str(i))
             os.mkdir(folder_path)
             torch.save({'model': chart_emb.state_dict()},
-                       os.path.join(folder_path, "chart2vec_bert.pth"))
+                       os.path.join(folder_path, "chart2vec_base.pth"))
 
 
 if __name__ == "__main__":

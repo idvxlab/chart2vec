@@ -21,10 +21,10 @@ class Word2vecVector(nn.Module):
     """
     def __init__(self,window_size=10):
         super(Word2vecVector, self).__init__()
-        # gensim.downloader.BASE_DIR = "D:/Graduate/idvx/Ant/Chart2Vec/get_word_vectors/word2vec_model/gensim-data"
-        # gensim.downloader.base_dir = "D:/Graduate/idvx/Ant/Chart2Vec/get_word_vectors/word2vec_model/gensim-data"
-        gensim.downloader.BASE_DIR = "/home/chenying2929/gensim-data"
-        gensim.downloader.base_dir = "/home/chenying2929/gensim-data"
+        gensim.downloader.BASE_DIR = "D:\\Graduate\\idvx\\Ant\\history-models\\Chart2Vec-origin\\get_word_vectors\\word2vec_model\\gensim-data"
+        gensim.downloader.base_dir = "D:\\Graduate\\idvx\\Ant\\history-models\\Chart2Vec-origin\\get_word_vectors\\word2vec_model\\gensim-data"
+        # gensim.downloader.BASE_DIR = "/home/chenying2929/gensim-data"
+        # gensim.downloader.base_dir = "/home/chenying2929/gensim-data"
         # word2vec-google-news-300
         self.word2vec_model = api.load("glove-wiki-gigaword-100")
         self.w_avg_pool=nn.AvgPool1d(window_size, stride=window_size)
@@ -77,12 +77,12 @@ class Chart2Vec(nn.Module):
             `indexed_tokens`: numpy.array(), The word index obtained by the bert tokenizer, which can be used to obtain the word vector later.
             `fact_pos_id`: numpy.array(), Identify the fact token location.
     """
-    def __init__(self, rep_size=10*MAX_SEMANTIC_LEN+400, hidden_dropout_prob=0.1,last_rep_size=300):
+    def __init__(self, in_size=786,rep_size=10*MAX_SEMANTIC_LEN+400, hidden_dropout_prob=0.1,last_rep_size=300):
         super(Chart2Vec, self).__init__()
         self.structual_embedding=StructuralEmbedding()
         self.semantic_embedding=SemanticEmbedding()
         self.fc=nn.Sequential(
-            nn.Linear(rep_size,rep_size),
+            nn.Linear(in_size,rep_size),
             nn.BatchNorm1d(rep_size),
             nn.ReLU(inplace=True),
             nn.Linear(rep_size,last_rep_size) 

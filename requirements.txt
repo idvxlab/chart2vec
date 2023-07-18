@@ -5,3 +5,4 @@ chardet==4.0.0
 matplotlib==3.5.2
 gensim==4.1.2
 nltk==3.7
+functools
