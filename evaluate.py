@@ -423,10 +423,9 @@ def cal_one_story_p_window3(dataset_story_len,current_story_len,pick_num):
 def factorial(num):
 	return eval('*'.join(map(str,range(1,num+1))))
 
-
 if __name__ =="__main__":
     # path_name="word2vec-concat12-avgpool-1_result.json"
-    path_name="results/modules-words-max-pooling-result.json"
+    path_name="results/chart2vec_base-result_256.json"
     # path_name="./evaluation/quantitive-experiment/chartseer/write_json.json"
     # path_name="./evaluation/quantitive-experiment/erato-fact2vec/erato_result.json"
     evaluate_more_nearest_dis_triplets(path_name,search_num=1)

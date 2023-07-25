@@ -11,7 +11,7 @@ import gensim.downloader as api
 import numpy as np
 import gensim
 from utils.constants import *
-
+from wikipedia2vec import Wikipedia2Vec
 
 class Word2vecVector(nn.Module):
     """
@@ -21,12 +21,8 @@ class Word2vecVector(nn.Module):
     """
     def __init__(self,window_size=10):
         super(Word2vecVector, self).__init__()
-        gensim.downloader.BASE_DIR = "D:\\Graduate\\idvx\\Ant\\history-models\\Chart2Vec-origin\\get_word_vectors\\word2vec_model\\gensim-data"
-        gensim.downloader.base_dir = "D:\\Graduate\\idvx\\Ant\\history-models\\Chart2Vec-origin\\get_word_vectors\\word2vec_model\\gensim-data"
-        # gensim.downloader.BASE_DIR = "/home/chenying2929/gensim-data"
-        # gensim.downloader.base_dir = "/home/chenying2929/gensim-data"
-        # word2vec-google-news-300
-        self.word2vec_model = api.load("glove-wiki-gigaword-100")
+        MODLE_FILE="/home/chenying2929/Chart2Vec-test-Wikipedia2vec/enwiki_20180420_win10_100d.pkl"
+        self.word2vec_model = Wikipedia2Vec.load(MODLE_FILE)
         self.w_avg_pool=nn.AvgPool1d(window_size, stride=window_size)
 
     def forward(self, tokenized_text_list):
@@ -35,7 +31,7 @@ class Word2vecVector(nn.Module):
             temp_sentence_list=[]
             for word in sentence:
                 try:
-                    word_vectors=self.word2vec_model[word]
+                    word_vectors=self.word2vec_model.get_word_vector(word.lower())
                 except:
                     word_vectors=[0]*WORD_VECTORS_LEN
                 temp_sentence_list.extend(np.array(word_vectors))
@@ -50,7 +46,7 @@ class StructuralEmbedding(nn.Module):
     """
        According to the grammar tree, the structure of the fact is encoded, and CNN is used. 
     """
-    def __init__(self, rules_feature=MAX_STRUCT_FEATURE_LEN,out_channels=8,kernel_size=3):
+    def __init__(self, rules_feature=MAX_STRUCT_FEATURE_LEN,out_channels=10,kernel_size=3):
         super(StructuralEmbedding, self).__init__()
         self.conv = nn.Sequential(
             nn.Conv1d(rules_feature, out_channels, kernel_size, padding=0),
@@ -77,7 +73,7 @@ class Chart2Vec(nn.Module):
             `indexed_tokens`: numpy.array(), The word index obtained by the bert tokenizer, which can be used to obtain the word vector later.
             `fact_pos_id`: numpy.array(), Identify the fact token location.
     """
-    def __init__(self, in_size=786,rep_size=10*MAX_SEMANTIC_LEN+400, hidden_dropout_prob=0.1,last_rep_size=300):
+    def __init__(self, in_size=890,rep_size=10*MAX_SEMANTIC_LEN+400, hidden_dropout_prob=0.1,last_rep_size=300):
         super(Chart2Vec, self).__init__()
         self.structual_embedding=StructuralEmbedding()
         self.semantic_embedding=SemanticEmbedding()

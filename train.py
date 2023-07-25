@@ -19,7 +19,7 @@ from encoder.ImprovedQuadrupletLoss import *
 
 
 def train_chart2vec():
-    combine_name = "modules-test"
+    combine_name = "chart2vec_base_batch256_struct16_epoch100_lr0.05"
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # get current time, used for create folders
     current_time = time.strftime(
@@ -48,7 +48,7 @@ def train_chart2vec():
     total_sample_num = len(train_data)
     batch_num = total_sample_num // batch_size
     best_loss = 1e7
-    lr = 1e-3
+    lr = 5e-3
 
     # ---------when use quadruplet data for training------------
     batch_gen = quadruplet_batch_generator_word2vec(train_data, batch_size)

@@ -651,7 +651,7 @@
         ],
         "measure": [
             {
-                "field": "Weighted count per 100,000 pop",
+                "field": "Weighted count per 100000 pop",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -871,7 +871,7 @@
         ],
         "measure": [
             {
-                "field": "Total medals per 100,000 pop",
+                "field": "Total medals per 100000 pop",
                 "subtype": "integer+",
                 "aggregate": "max",
                 "type": "numerical"
@@ -888,7 +888,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Total medals per 100,000 pop",
+                "field": "Total medals per 100000 pop",
                 "subtype": "integer+",
                 "aggregate": "max",
                 "type": "numerical"
@@ -915,7 +915,7 @@
                 "type": "numerical"
             },
             {
-                "field": "Gold per 100,000 pop",
+                "field": "Gold per 100000 pop",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -1016,7 +1016,7 @@
         ],
         "measure": [
             {
-                "field": "Gold per 100,000 pop",
+                "field": "Gold per 100000 pop",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -1054,7 +1054,7 @@
         ],
         "measure": [
             {
-                "field": "Total medals per 100,000 pop",
+                "field": "Total medals per 100000 pop",
                 "subtype": "real+",
                 "aggregate": "sum",
                 "type": "numerical"
@@ -9777,7 +9777,7 @@
         "subspace": [
             {
                 "field": "parental level of education",
-                "value": "bachelor's degree",
+                "value": "bachelor degree",
                 "type": "categorical"
             }
         ],
@@ -9799,7 +9799,7 @@
         "subspace": [
             {
                 "field": "parental level of education",
-                "value": "master's degree",
+                "value": "master degree",
                 "type": "categorical"
             }
         ],
@@ -9840,7 +9840,7 @@
             },
             {
                 "field": "parental level of education",
-                "value": "master's degree",
+                "value": "master degree",
                 "type": "categorical"
             }
         ],
@@ -12334,7 +12334,7 @@
         "focus": [],
         "chart_type": "Horizontal Bar Chart",
         "meta": [
-            "Fearless (Taylor's Version)",
+            "Fearless (Taylor Version)",
             "evermore (deluxe version)",
             "Lover"
         ]
@@ -12574,7 +12574,7 @@
         "meta": [
             "reputation",
             "Lover",
-            "Fearless (Taylor's Version)"
+            "Fearless (Taylor Version)"
         ]
     },
     {
@@ -14406,7 +14406,7 @@
         ],
         "measure": [
             {
-                "field": "Serum Cholestrol",
+                "field": "Serum cholesterol",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -14481,7 +14481,7 @@
         ],
         "measure": [
             {
-                "field": "Serum Cholestrol",
+                "field": "Serum cholesterol",
                 "aggregate": "avg",
                 "type": "numerical"
             },
@@ -14597,7 +14597,7 @@
         ],
         "measure": [
             {
-                "field": "Serum Cholestrol",
+                "field": "Serum cholesterol",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -14798,7 +14798,7 @@
                 "type": "numerical"
             },
             {
-                "field": "Serum Cholestrol",
+                "field": "Serum cholesterol",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -25667,7 +25667,7 @@
         "focus": [
             {
                 "field": "max loding weights",
-                "value": "greater than 55000 kg",
+                "value": "greater than  55000 kg",
                 "type": "text"
             }
         ],
@@ -25680,7 +25680,7 @@
         "subspace": [
             {
                 "field": "max loding weights",
-                "value": "greater than 55000 kg",
+                "value": "greater than  55000 kg",
                 "type": "text"
             }
         ],
@@ -44147,7 +44147,7 @@
         "focus": [
             {
                 "field": "chargeable income group",
-                "value": "50,001 - 60,000",
+                "value": "50001 - 60000",
                 "type": "categorical"
             },
             {
@@ -50624,7 +50624,7 @@
         "subspace": [
             {
                 "field": "installs",
-                "value": "100,000+",
+                "value": "greater than 100000",
                 "type": "categorical"
             }
         ],
@@ -52467,8 +52467,8 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Above 60",
-            ">35 - 40",
-            ">40 - 45"
+            "greater than 35 - 40",
+            "greater than 40 - 45"
         ]
     },
     {
@@ -52492,8 +52492,8 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Above 60",
-            ">35 - 40",
-            ">40 - 45"
+            "greater than 35 - 40",
+            "greater than 40 - 45"
         ]
     },
     {
@@ -52516,7 +52516,7 @@
         "focus": [
             {
                 "field": "age grou[",
-                "value": ">40 - 45",
+                "value": "greater than 40 - 45",
                 "type": "categorical"
             }
         ],
@@ -52803,8 +52803,8 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Above 60",
-            ">35 - 40",
-            ">40 - 45"
+            "greater than 35 - 40",
+            "greater than 40 - 45"
         ]
     },
     {
@@ -52834,8 +52834,8 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Above 60",
-            ">30 - 35",
-            ">35 - 40"
+            "greater than 30 - 35",
+            "greater than 35 - 40"
         ]
     },
     {
@@ -58943,7 +58943,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "599",
-            "1,999",
+            "1999",
             "999"
         ]
     },
@@ -58953,7 +58953,7 @@
         "subspace": [
             {
                 "field": "MRP",
-                "value": "2,499",
+                "value": "2499",
                 "type": "categorical"
             }
         ],
@@ -58974,12 +58974,12 @@
         "focus": [
             {
                 "field": "Selling Price",
-                "value": "1,999",
+                "value": "1999",
                 "type": "categorical"
             },
             {
                 "field": "Selling Price",
-                "value": "2,190",
+                "value": "2190",
                 "type": "categorical"
             }
         ],
@@ -71324,7 +71324,7 @@
             },
             {
                 "field": "brand",
-                "value": "L'Oreal",
+                "value": "Loreal",
                 "type": "categorical"
             }
         ],
@@ -82747,7 +82747,7 @@
         ],
         "measure": [
             {
-                "field": "Eutrophying emissions per 1000 kcal (per 1000 kcal)",
+                "field": "Eutrophication emissions per 1000 kcal (per 1000 kcal)",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -82798,7 +82798,7 @@
                 "type": "numerical"
             },
             {
-                "field": "Eutrophying emissions per 1000 kcal (per 1000 kcal)",
+                "field": "Eutrophication emissions per 1000 kcal (per 1000 kcal)",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -84302,7 +84302,7 @@
             },
             {
                 "field": "Dogs",
-                "value": "1,355",
+                "value": "1355",
                 "type": "categorical"
             }
         ],
@@ -86293,7 +86293,7 @@
         "subspace": [
             {
                 "field": "css",
-                "value": "Skills you'll gain:",
+                "value": "Skills you will gain:",
                 "type": "categorical"
             }
         ],
@@ -86940,7 +86940,7 @@
         "focus": [],
         "chart_type": "Horizontal Bar Chart",
         "meta": [
-            "I Don't Care (with Justin Bieber)",
+            "I Do not Care (with Justin Bieber)",
             "Amala",
             "Hot Pink"
         ]
@@ -90141,7 +90141,7 @@
         "focus": [
             {
                 "field": "brand",
-                "value": "PENHALIGON'S",
+                "value": "PENHALIGON",
                 "type": "categorical"
             }
         ],
@@ -90232,7 +90232,7 @@
         "focus": [
             {
                 "field": "brand",
-                "value": "PENHALIGON'S",
+                "value": "PENHALIGON",
                 "type": "categorical"
             },
             {
@@ -90730,7 +90730,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Google LLC",
-            "Miosoft Corporation",
+            "Microsoft Corporation",
             "Meta Platforms, Inc."
         ]
     },
@@ -90787,7 +90787,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Google LLC",
-            "Miosoft Corporation",
+            "Microsoft Corporation",
             "Meta Platforms, Inc."
         ]
     },
@@ -92380,9 +92380,9 @@
         "focus": [],
         "chart_type": "Horizontal Bar Chart",
         "meta": [
-            "Men's Shoes",
-            "Men's Pullover Hoodie",
-            "Men's Long-Sleeve T-Shirt"
+            "Men Shoes",
+            "Men Pullover Hoodie",
+            "Men Long-Sleeve T-Shirt"
         ]
     },
     {
@@ -92480,7 +92480,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "Ball Pump",
-            "Men's Tights",
+            "Men Tights",
             "Shoes"
         ]
     },
@@ -92811,7 +92811,7 @@
         "focus": [],
         "chart_type": "Horizontal Bar Chart",
         "meta": [
-            "100% recycled polyester doubleknit",
+            "100% recycled polyester double knit",
             "Polyamide Blend",
             "86% Polyester, 14% Elastane"
         ]
@@ -99777,7 +99777,7 @@
         "meta": [
             "Kirsten Hanssen",
             "Grant Boswell",
-            "Eva Ueltzen"
+            "Eva uelzen"
         ]
     },
     {
@@ -101943,7 +101943,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "bunny",
-            "stories her body pther parties",
+            "stories her body other parties",
             "me talk pretty one day"
         ],
         "fact_id": "tableau-133-2"
@@ -102081,7 +102081,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "countri'",
+                "field": "country'",
                 "type": "categorical"
             }
         ],
@@ -102136,7 +102136,7 @@
         ],
         "measure": [
             {
-                "field": "tsunamis 'lisbon' location",
+                "field": "tsunamis lisbon location",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -102435,7 +102435,7 @@
                 "type": "numerical"
             },
             {
-                "field": "Toatl villages in West Java haven't tested internet speed (2021)",
+                "field": "total villages in West Java have not tested internet speed (2021)",
                 "aggregate": "sum",
                 "subtype": "real",
                 "type": "numerical"
@@ -102491,7 +102491,7 @@
         ],
         "measure": [
             {
-                "field": "BTS(Base Tranciever Station)",
+                "field": "BTS(Base transceiver Station)",
                 "aggregate": "sum",
                 "subtype": "real",
                 "type": "numerical"
@@ -102730,7 +102730,7 @@
         "meta": [
             "Daytime Emmy",
             "Other",
-            "People's Choice"
+            "People Choice"
         ],
         "fact_id": "tableau-1054-5"
     },
@@ -103479,7 +103479,7 @@
         "focus": [
             {
                 "field": "Movies with PG contributes the maximum share",
-                "value": "$13,77 billion",
+                "value": "$1377 billion",
                 "type": "numerical"
             }
         ],
@@ -103889,7 +103889,7 @@
         ],
         "measure": [
             {
-                "field": "Daily temperture",
+                "field": "Daily temperature",
                 "aggregate": "avg",
                 "subtype": "real+",
                 "type": "numerical"
@@ -103955,7 +103955,7 @@
         ],
         "measure": [
             {
-                "field": "money Heist's travelability",
+                "field": "money Heist travel ability",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -104348,8 +104348,8 @@
         "focus": [],
         "meta": [
             "Star Wars force awakens",
-            "The Avergers",
-            "Regure One A Star Wars Story"
+            "The Avengers",
+            "regcure One A Star Wars Story"
         ]
     },
     {
@@ -104903,7 +104903,7 @@
         "meta": [
             "I",
             "oh",
-            "I'm"
+            "I am"
         ],
         "fact_id": "tableau-1614-2"
     },
@@ -105193,7 +105193,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "hoildays / work trips",
+                "field": "holidays / work trips",
                 "type": "categorical"
             }
         ],
@@ -105301,7 +105301,7 @@
         ],
         "measure": [
             {
-                "field": "spotify's valence score",
+                "field": "spotify valence score",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -105310,7 +105310,7 @@
         "focus": [],
         "meta": [
             "beautiful",
-            "ain't too proud",
+            "are not too proud",
             "beetlejuice"
         ],
         "fact_id": "tableau-1128-2"
@@ -105389,7 +105389,7 @@
                 "type": "categorical"
             },
             {
-                "field": "spotify's valence score",
+                "field": "spotify valence score",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -105667,7 +105667,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "top artise",
+                "field": "top artist",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "categorical"
@@ -106185,7 +106185,7 @@
         ],
         "measure": [
             {
-                "field": "spotify's valence score",
+                "field": "spotify valence score",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -106207,7 +106207,7 @@
         ],
         "measure": [
             {
-                "field": "spotify's valence score",
+                "field": "spotify valence score",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -106284,7 +106284,7 @@
         "meta": [
             "Endgame",
             "infinity war",
-            "Marvel's The Avengers"
+            "Marvel The Avengers"
         ],
         "fact_id": "tableau-1208-4"
     },
@@ -106397,7 +106397,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Anuual Visits",
+                "field": "annual Visits",
                 "aggregate": "avg",
                 "subtype": "real+",
                 "type": "numerical"
@@ -106467,7 +106467,7 @@
         ],
         "measure": [
             {
-                "field": "enterainment category",
+                "field": "entertainment category",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -106840,7 +106840,7 @@
                 "type": "numerical"
             },
             {
-                "field": "temperture",
+                "field": "temperature",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -107744,7 +107744,7 @@
         "focus": [],
         "meta": [
             "DarthJarJar",
-            "whowouldwin",
+            "who would win",
             "StarWars"
         ],
         "fact_id": "tableau-1473-4"
@@ -108535,7 +108535,7 @@
         "focus": [],
         "meta": [
             "Still fishing",
-            "spincasting",
+            "spin casting",
             "drift fishing"
         ],
         "fact_id": "tableau-2317-2"
@@ -108984,7 +108984,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "reported signtings",
+                "field": "reported sightings",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -109418,7 +109418,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": " tyep",
+                "field": " type",
                 "type": "categorical"
             }
         ],
@@ -109530,7 +109530,7 @@
         ],
         "measure": [
             {
-                "field": "natural gas porportion",
+                "field": "natural gas proportion",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -109641,7 +109641,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "tempreture",
+                "field": "temperature",
                 "type": "categorical"
             }
         ],
@@ -109692,7 +109692,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Estimated number of people with Parkinson's",
+                "field": "Estimated number of people with Parkinson",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -109709,7 +109709,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Estimated number of people over 45 newly diagnosed with Parkinson's per year",
+                "field": "Estimated number of people over 45 newly diagnosed with Parkinson per year",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -109731,7 +109731,7 @@
         ],
         "measure": [
             {
-                "field": "Number of people diagnosed with Parkinson's",
+                "field": "Number of people diagnosed with Parkinson",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -109872,7 +109872,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in Asia",
+                "field": "countries in Asia",
                 "type": "categorical"
             }
         ],
@@ -110095,7 +110095,7 @@
         ],
         "measure": [
             {
-                "field": "licenes registered",
+                "field": "license registered",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -110371,7 +110371,7 @@
         "meta": [
             "Striped",
             "Melon-Headed Whale",
-            "Risso's"
+            "Risso"
         ],
         "fact_id": "tableau-641-5"
     },
@@ -110402,7 +110402,7 @@
         "focus": [
             {
                 "field": "states",
-                "value": "Califonia",
+                "value": "California",
                 "type": "geographical"
             },
             {
@@ -110849,7 +110849,7 @@
         ],
         "measure": [
             {
-                "field": "number of new dispalcements",
+                "field": "number of new displacements",
                 "aggregate": "sum",
                 "subtype": "real",
                 "type": "numerical"
@@ -111183,7 +111183,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in Oceania",
+                "field": "countries in Oceania",
                 "type": "categorical"
             }
         ],
@@ -111336,7 +111336,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "Typhone",
+                "field": "Typhoon",
                 "type": "categorical"
             }
         ],
@@ -111368,7 +111368,7 @@
                 "type": "temporal"
             },
             {
-                "field": "Typhone",
+                "field": "Typhoon",
                 "type": "geographical"
             }
         ],
@@ -111376,7 +111376,7 @@
         "meta": "",
         "measure": [
             {
-                "field": "Number of Typhone",
+                "field": "Number of Typhoon",
                 "aggregate": "sum",
                 "type": "numerical",
                 "subtype": "integer+"
@@ -111759,13 +111759,13 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "ploymer type",
+                "field": "polymer type",
                 "type": "categorical"
             }
         ],
         "measure": [
             {
-                "field": "fraquency of each ploymer type",
+                "field": "frequency of each polymer type",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -111785,13 +111785,13 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "ploymer type",
+                "field": "polymer type",
                 "type": "categorical"
             }
         ],
         "measure": [
             {
-                "field": "lifetime of each ploymer type",
+                "field": "lifetime of each polymer type",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -112874,7 +112874,7 @@
         ],
         "measure": [
             {
-                "field": "hurricanes occurance",
+                "field": "hurricanes occurrence",
                 "aggregate": "count",
                 "subtype": "integer",
                 "type": "numerical"
@@ -113112,7 +113112,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "tsunamis 'sumatra' location",
+                "field": "tsunamis umatra' location",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -113129,7 +113129,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "tsunamis 'north pacific coast' location",
+                "field": "tsunamis north pacific coast' location",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -113146,7 +113146,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "tsunamis 'lisbon' location",
+                "field": "tsunamis lisbon location",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -113197,7 +113197,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Ammonium Nitrate Disastars",
+                "field": "Ammonium Nitrate disasters",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -113591,7 +113591,7 @@
         ],
         "measure": [
             {
-                "field": "change of CO2 emissions compared to 2005 in different countire",
+                "field": "change of CO2 emissions compared to 2005 in different countrie",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "numerical"
@@ -113665,7 +113665,7 @@
         ],
         "focus": [],
         "meta": [
-            "<0.25 acres",
+            "lower than0.25 acres",
             "0.5 - 10 acres",
             "10 - 100 acres"
         ],
@@ -113788,7 +113788,7 @@
         "chart_type": "Text Chart",
         "subspace": [
             {
-                "field": "percentage of India's total",
+                "field": "percentage of India total",
                 "value": "2.8",
                 "type": "numerical"
             }
@@ -113796,7 +113796,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "percentage of India's total",
+                "field": "percentage of India total",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -113901,7 +113901,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in Caribbean & Central America",
+                "field": "countries in Caribbean & Central America",
                 "type": "categorical"
             }
         ],
@@ -113953,7 +113953,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in South America",
+                "field": "countries in South America",
                 "type": "categorical"
             }
         ],
@@ -113979,7 +113979,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in Africa",
+                "field": "countries in Africa",
                 "type": "categorical"
             }
         ],
@@ -114081,7 +114081,7 @@
                 "type": "categorical"
             },
             {
-                "field": "countires in Europe",
+                "field": "countries in Europe",
                 "type": "categorical"
             }
         ],
@@ -114173,7 +114173,7 @@
         ],
         "measure": [
             {
-                "field": "incease in Carbon dioxide emissions",
+                "field": "increase in Carbon dioxide emissions",
                 "aggregate": "sum",
                 "subtype": "real+",
                 "type": "numerical"
@@ -114183,7 +114183,7 @@
         "meta": [
             "Oman",
             "UAE",
-            "Bostswana"
+            "Botswana"
         ],
         "fact_id": "tableau-1175-3"
     },
@@ -114296,7 +114296,7 @@
         ],
         "focus": [],
         "meta": [
-            "Jaenschwalde",
+            "janschwalde",
             "Poland",
             "Neurath"
         ],
@@ -114613,7 +114613,7 @@
         "chart_type": "Text Chart",
         "subspace": [
             {
-                "field": "Kerala's forest area",
+                "field": "Kerala forest area",
                 "value": "20321",
                 "type": "numerical"
             }
@@ -114644,7 +114644,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Kerala's forest area percentage",
+                "field": "Kerala forest area percentage",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -115678,7 +115678,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "mainstay choreograhpy",
+                "field": "mainstay choreography",
                 "type": "categorical"
             }
         ],
@@ -115692,7 +115692,7 @@
         ],
         "focus": [
             {
-                "field": "mainstay choreograhpy",
+                "field": "mainstay choreography",
                 "value": "splits",
                 "type": "categorical"
             }
@@ -115728,7 +115728,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "mainstay disrobements",
+                "field": "mainstay disrobement",
                 "type": "categorical"
             }
         ],
@@ -115812,7 +115812,7 @@
         ],
         "measure": [
             {
-                "field": "mainstay choreograhpy",
+                "field": "mainstay choreography",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -115834,7 +115834,7 @@
         ],
         "measure": [
             {
-                "field": "mainstay disrobements",
+                "field": "mainstay disrobement",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -115940,13 +115940,13 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "athelete group",
+                "field": "athlete group",
                 "type": "categorical"
             }
         ],
         "measure": [
             {
-                "field": "average number of medals per athelete",
+                "field": "average number of medals per athlete",
                 "aggregate": "avg",
                 "subtype": "integer",
                 "type": "numerical"
@@ -116731,7 +116731,7 @@
             },
             {
                 "field": "Type",
-                "value": "Haven't played",
+                "value": "have not played",
                 "type": "categorical"
             }
         ],
@@ -116771,7 +116771,7 @@
         ],
         "measure": [
             {
-                "field": "municipla courses within 25 mile",
+                "field": "municipal courses within 25 mile",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -117201,7 +117201,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "pitch thrown by an apponent in a home game during 2017 season",
+                "field": "pitch thrown by an opponent in a home game during 2017 season",
                 "type": "categorical"
             }
         ],
@@ -117223,7 +117223,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "fastball / off-speec, bangs / no bangs",
+                "field": "fastball / off-speed, bangs / no bangs",
                 "type": "categorical"
             }
         ],
@@ -118150,7 +118150,7 @@
         "focus": [],
         "meta": [
             "Jack Nicklaus",
-            "Tiger Wodds",
+            "Tiger Woods",
             "Walter Hagen"
         ],
         "fact_id": "tableau-1094-3"
@@ -118374,7 +118374,7 @@
         ],
         "measure": [
             {
-                "field": "Numbe of players",
+                "field": "Number of players",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -118404,7 +118404,7 @@
         ],
         "focus": [],
         "meta": [
-            "Newcastie United",
+            "newcastle United",
             "Cardiff City",
             "Bournemouth"
         ],
@@ -118522,7 +118522,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "athelete group",
+                "field": "athlete group",
                 "type": "categorical"
             }
         ],
@@ -118914,8 +118914,8 @@
         "focus": [],
         "meta": [
             "Syracuse",
-            "St John's",
-            "Gerogetown"
+            "St John",
+            "georgetown"
         ],
         "fact_id": "tableau-2416-4"
     },
@@ -119134,13 +119134,13 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "athelete group",
+                "field": "athlete group",
                 "type": "categorical"
             }
         ],
         "measure": [
             {
-                "field": "average summer games per athelete",
+                "field": "average summer games per athlete",
                 "aggregate": "avg",
                 "subtype": "integer",
                 "type": "numerical"
@@ -119160,13 +119160,13 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "athelete group",
+                "field": "athlete group",
                 "type": "categorical"
             }
         ],
         "measure": [
             {
-                "field": "average gold medals per athelete",
+                "field": "average gold medals per athlete",
                 "aggregate": "avg",
                 "subtype": "integer",
                 "type": "numerical"
@@ -119823,7 +119823,7 @@
         ],
         "measure": [
             {
-                "field": "porportion attacked",
+                "field": "proportion attacked",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -120193,7 +120193,7 @@
         ],
         "measure": [
             {
-                "field": "porportion attacked",
+                "field": "proportion attacked",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -120388,7 +120388,7 @@
         ],
         "measure": [
             {
-                "field": "porportion attacked",
+                "field": "proportion attacked",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -120416,7 +120416,7 @@
         ],
         "measure": [
             {
-                "field": "porportion attacked",
+                "field": "proportion attacked",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -121199,7 +121199,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "Writer's Age",
+                "field": "Writer Age",
                 "type": "categorical"
             }
         ],
@@ -121274,7 +121274,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Forecacted earky lovers",
+                "field": "forecast early lovers",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -121290,7 +121290,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Forecacted teriary",
+                "field": "forecast tertiary",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -121609,7 +121609,7 @@
                 "type": "geographical"
             },
             {
-                "field": "first oublished date",
+                "field": "first published date",
                 "type": "temporal"
             }
         ],
@@ -121681,7 +121681,7 @@
         ],
         "measure": [
             {
-                "field": "deferred maintance",
+                "field": "deferred maintenance",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -121831,7 +121831,7 @@
         ],
         "measure": [
             {
-                "field": "chekout of books",
+                "field": "checkout of books",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -121853,7 +121853,7 @@
         ],
         "measure": [
             {
-                "field": "chekout of books",
+                "field": "checkout of books",
                 "aggregate": "count",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -121968,8 +121968,8 @@
         "focus": [],
         "meta": [
             "2-10 lawyers",
-            "501+ laywers",
-            "11-25 laywers"
+            "501+ lawyers",
+            "11-25 lawyers"
         ],
         "fact_id": "tableau-651-3"
     },
@@ -122165,7 +122165,7 @@
         "meta": [
             "Columbia",
             "Cornell",
-            "Penssylvania"
+            "pennsylvania"
         ],
         "fact_id": "tableau-1810-2"
     },
@@ -122190,7 +122190,7 @@
         "focus": [],
         "meta": [
             "Brown",
-            "Penssylvania",
+            "pennsylvania",
             "Cornell"
         ],
         "fact_id": "tableau-1810-3"
@@ -122947,7 +122947,7 @@
                 "type": "numerical"
             },
             {
-                "field": "percentwith public health insurance",
+                "field": "percent with public health insurance",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -123014,7 +123014,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "precentage of respondent say they have been harassed by SARS before",
+                "field": "percentage of respondent say they have been harassed by SARS before",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123286,7 +123286,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "The Pill % citing side effects as the reasion for stopping birth control",
+                "field": "The Pill % citing side effects as the reason for stopping birth control",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123339,7 +123339,7 @@
         "focus": [],
         "meta": [
             "key business risk",
-            "monitor and measure security and availabilty of system",
+            "monitor and measure security and availability of system",
             "regular steff information security"
         ]
     },
@@ -123445,7 +123445,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "injection % citing side effects as the reasion for stopping birth control",
+                "field": "injection % citing side effects as the reason for stopping birth control",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123490,7 +123490,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "The Pill % citing side effects as the reasion for stopping birth control",
+                "field": "The Pill % citing side effects as the reason for stopping birth control",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123507,7 +123507,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "The Pill % citing side effects as the reasion for stopping birth control",
+                "field": "The Pill % citing side effects as the reason for stopping birth control",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123557,7 +123557,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent say they have been harassed by SARS before",
+                "field": "percentage of respondent say they have been harassed by SARS before",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123679,7 +123679,7 @@
         "meta": [
             "all podcast",
             " news",
-            " plitics"
+            " politics"
         ]
     },
     {
@@ -123787,7 +123787,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent harassed",
+                "field": "percentage of respondent harassed",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123802,7 +123802,7 @@
         ],
         "meta": [
             "Extortion",
-            " Humilation",
+            " humiliation",
             " unlawful arrest"
         ]
     },
@@ -123840,7 +123840,7 @@
         ],
         "measure": [
             {
-                "field": "quantities of hydrocodene",
+                "field": "quantities of hydrocodone",
                 "aggregate": "sum",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -123994,7 +123994,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent say they have been harassed by SARS before",
+                "field": "percentage of respondent say they have been harassed by SARS before",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -124016,7 +124016,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent harassed",
+                "field": "percentage of respondent harassed",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -124042,7 +124042,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent harassed",
+                "field": "percentage of respondent harassed",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -124050,7 +124050,7 @@
         ],
         "focus": [],
         "meta": [
-            "humanliation",
+            "humiliation",
             " invasion of privacy",
             " physical abuse"
         ]
@@ -124096,7 +124096,7 @@
         ],
         "measure": [
             {
-                "field": "precentage of respondent`s feelings",
+                "field": "percentage of respondent`s feelings",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -124118,7 +124118,7 @@
         ],
         "measure": [
             {
-                "field": "puishing attacks",
+                "field": "pui shing attacks",
                 "aggregate": "avg",
                 "subtype": "real+",
                 "type": "numerical"
@@ -124140,7 +124140,7 @@
         ],
         "measure": [
             {
-                "field": "puishing attacks",
+                "field": "pui shing attacks",
                 "aggregate": "avg",
                 "subtype": "real+",
                 "type": "numerical"
@@ -124178,7 +124178,7 @@
         ],
         "measure": [
             {
-                "field": "respondants",
+                "field": "respondents",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -124230,7 +124230,7 @@
         ],
         "focus": [
             {
-                "field": "I don't know",
+                "field": "I Do not know",
                 "value": "68",
                 "type": "numerical"
             }
@@ -125240,7 +125240,7 @@
         ],
         "measure": [
             {
-                "field": "millions of childern under stuting",
+                "field": "millions of childern under stunting",
                 "aggregate": "count",
                 "subtype": "integer",
                 "type": "numerical"
@@ -125909,7 +125909,7 @@
         ],
         "measure": [
             {
-                "field": "average ml of alchoholic beverages per person per week",
+                "field": "average ml of alcoholic beverages per person per week",
                 "aggregate": "avg",
                 "subtype": "real",
                 "type": "numerical"
@@ -125953,7 +125953,7 @@
         ],
         "measure": [
             {
-                "field": "millions of childern under stuting target",
+                "field": "millions of childern under stunting target",
                 "aggregate": "count",
                 "subtype": "integer",
                 "type": "numerical"
@@ -125975,7 +125975,7 @@
         ],
         "measure": [
             {
-                "field": "millions of childern under stuting normal",
+                "field": "millions of childern under stunting normal",
                 "aggregate": "count",
                 "subtype": "integer",
                 "type": "numerical"
@@ -125997,7 +125997,7 @@
         ],
         "measure": [
             {
-                "field": "money spent on takaways",
+                "field": "money spent on takeaways",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -126019,7 +126019,7 @@
         ],
         "measure": [
             {
-                "field": "money spent on takaways",
+                "field": "money spent on takeaways",
                 "aggregate": "count",
                 "subtype": "real",
                 "type": "numerical"
@@ -126243,7 +126243,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "stage of registrition",
+                "field": "stage of registration",
                 "type": "categorical"
             }
         ],
@@ -126313,7 +126313,7 @@
         ],
         "measure": [
             {
-                "field": "rideships",
+                "field": "ride ships",
                 "aggregate": "sum",
                 "subtype": "real+",
                 "type": "numerical"
@@ -126344,7 +126344,7 @@
         "focus": [
             {
                 "field": "stage",
-                "value": "stage4",
+                "value": "stage",
                 "type": "categorical"
             }
         ],
@@ -126784,7 +126784,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "waittime",
+                "field": "wait time",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -127001,7 +127001,7 @@
         ],
         "measure": [
             {
-                "field": "insurement",
+                "field": "inurement",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -127256,7 +127256,7 @@
         ],
         "measure": [
             {
-                "field": "total reqest",
+                "field": "total request",
                 "aggregate": "sum",
                 "type": "numerical"
             }
@@ -127342,7 +127342,7 @@
         ],
         "measure": [
             {
-                "field": "metric2",
+                "field": "metric",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -127633,7 +127633,7 @@
         ],
         "measure": [
             {
-                "field": "engmt",
+                "field": "Engineering Management",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128215,7 +128215,7 @@
         ],
         "measure": [
             {
-                "field": "metric2",
+                "field": "metric",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128242,7 +128242,7 @@
         ],
         "measure": [
             {
-                "field": "metric2",
+                "field": "metric",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128303,7 +128303,7 @@
         ],
         "measure": [
             {
-                "field": "metric2",
+                "field": "metric",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128370,7 +128370,7 @@
         ],
         "measure": [
             {
-                "field": "metric2",
+                "field": "metric",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128425,7 +128425,7 @@
         ],
         "measure": [
             {
-                "field": "spped",
+                "field": "speed",
                 "aggregate": "avg",
                 "type": "numerical"
             }
@@ -128690,7 +128690,7 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "gobal bombing acticity",
+                "field": "gobal bombing activity",
                 "aggregate": "avg",
                 "subtype": "none",
                 "type": "geographical"
@@ -129410,8 +129410,8 @@
         "focus": [],
         "chart_type": "Horizontal Bar Chart",
         "meta": [
-            "Bachelor's Degree",
-            "Master's Degree",
+            "Bachelor Degree",
+            "Master Degree",
             "Associates Degree"
         ],
         "fact_id": "tableau-275-7"
@@ -129552,7 +129552,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "client+asset",
+                "field": "client and asset",
                 "type": "categorical"
             }
         ],
@@ -129705,7 +129705,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "client+asset",
+                "field": "client and asset",
                 "type": "categorical"
             }
         ],
@@ -130805,7 +130805,7 @@
         ],
         "measure": [
             {
-                "field": "years with symptioms as % of age",
+                "field": "years with symptoms as % of age",
                 "aggregate": "avg",
                 "subtype": "integer+",
                 "type": "numerical"
@@ -132235,7 +132235,7 @@
         "subspace": [],
         "breakdown": [
             {
-                "field": "Cunrrency Zones",
+                "field": "currency Zones",
                 "type": "categorical"
             }
         ],
@@ -132468,7 +132468,7 @@
         "meta": [
             "Technology",
             "Furniture",
-            "Office Suppies"
+            "Office supplies"
         ],
         "fact_id": "tableau-1064-3"
     },
@@ -132804,13 +132804,13 @@
         "breakdown": [],
         "measure": [
             {
-                "field": "Goverment regualations effectively enforce",
+                "field": "Goverment regulations effectively enforce",
                 "aggregate": "sum",
                 "subtype": "real+",
                 "type": "numerical"
             },
             {
-                "field": "Goverment regualations applied and enforced without influence",
+                "field": "Goverment regulations applied and enforced without influence",
                 "aggregate": "sum",
                 "subtype": "real+",
                 "type": "numerical"
@@ -132895,7 +132895,7 @@
         "chart_type": "Horizontal Bar Chart",
         "meta": [
             "George Washington",
-            "Franklin D. Rooseve..",
+            "Franklin D. roosevelt",
             "William H Taft"
         ],
         "fact_id": "tableau-196-2"
@@ -133586,7 +133586,7 @@
                 "type": "numerical"
             },
             {
-                "field": "total tweets repubicans",
+                "field": "total tweets Republican",
                 "aggregate": "count",
                 "subtype": "integer",
                 "type": "numerical"

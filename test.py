@@ -15,12 +15,12 @@ from encoder.modeling_chart2vec import *
 
 
 def test_chart2vec():
-    combine_name="modules-words-max-pooling"
+    combine_name="chart2vec_base_128"
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     path = os.path.dirname(__file__)
 
-    model_10="modules-words-max-pooling-2023-03-22 22-59-49/2023-03-23 01-02-43-95/"
-    model_path = model_10+"chart2vec_bert.pth"
+    model_1="chart2vec_base_128-2023-07-24 21-11-47/2023-07-25 01-13-44-97/"
+    model_path = model_1+"chart2vec_base.pth"
     model_save_path = os.path.join(path, "models", model_path)
     fact_path = os.path.join(path, "dataset/testing_data.json")
     with open(fact_path) as f:

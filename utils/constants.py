@@ -1,6 +1,6 @@
 import torch
 MAX_SEMANTIC_LEN=25
-MAX_STRUCT_FEATURE_LEN=15
+MAX_STRUCT_FEATURE_LEN=16
 SEMANTIC_POS={
     "NONE":0,
     "subspace-field":1,

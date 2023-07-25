@@ -10,7 +10,8 @@ import torch.nn as nn
 import gensim.downloader as api
 import numpy as np
 import gensim
-from .utils.constants import *
+from utils.constants import *
+from wikipedia2vec import Wikipedia2Vec
 
 
 class Word2vecVector(nn.Module):
@@ -21,12 +22,8 @@ class Word2vecVector(nn.Module):
     """
     def __init__(self,window_size=10):
         super(Word2vecVector, self).__init__()
-        # gensim.downloader.BASE_DIR = "D:/Graduate/idvx/Ant/Chart2Vec/get_word_vectors/word2vec_model/gensim-data"
-        # gensim.downloader.base_dir = "D:/Graduate/idvx/Ant/Chart2Vec/get_word_vectors/word2vec_model/gensim-data"
-        gensim.downloader.BASE_DIR = "/home/chenying2929/gensim-data"
-        gensim.downloader.base_dir = "/home/chenying2929/gensim-data"
-        # word2vec-google-news-300
-        self.word2vec_model = api.load("glove-wiki-gigaword-100")
+        MODLE_FILE="/home/chenying2929/Chart2Vec-test-Wikipedia2vec/enwiki_20180420_win10_100d.pkl"
+        self.word2vec_model = Wikipedia2Vec.load(MODLE_FILE)
         self.w_avg_pool=nn.AvgPool1d(window_size, stride=window_size)
 
     def forward(self, tokenized_text_list):
@@ -35,7 +32,7 @@ class Word2vecVector(nn.Module):
             temp_sentence_list=[]
             for word in sentence:
                 try:
-                    word_vectors=self.word2vec_model[word]
+                    word_vectors=self.word2vec_model.get_word_vector(word.lower())
                 except:
                     word_vectors=[0]*WORD_VECTORS_LEN
                 temp_sentence_list.extend(np.array(word_vectors))
