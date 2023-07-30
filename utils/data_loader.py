@@ -1,9 +1,11 @@
 import copy
-import sys,os
-sys.path.append(os.getcwd())
+import sys
+import os
 import numpy as np
-from input_embedding.semantic_extract import extract_semantic_info
+sys.path.append(os.getcwd())
 from input_embedding.structual_extract import extract_structual_info
+from input_embedding.semantic_extract import extract_semantic_info
+from utils.constants import *
 
 
 def quadruplet_batch_generator_word2vec(all_data, batch_size, shuffle=True):
@@ -40,27 +42,15 @@ def quadruplet_batch_generator_word2vec(all_data, batch_size, shuffle=True):
         end = start + batch_size
         batch_count += 1
         data_list = all_data[start:end]
-        anchor_list = list()
-        pos1_list = list()
-        pos2_list = list()
-        neg_list = list()
-        
+        anchor_list, pos1_list, pos2_list, neg_list = [], [], [], []
 
-        for value in data_list:
-            anchor_list.append(value["chart1"])
-            pos1_list.append(value["chart2"])
-            pos2_list.append(value["chart3"])
-            neg_list.append(value["chart4"])
+        anchor_list, pos1_list, pos2_list, neg_list = zip(
+            *[(value["chart1"], value["chart2"], value["chart3"], value["chart4"]) for value in data_list])
+        input_lists = [anchor_list, pos1_list, pos2_list, neg_list]
+        input_results = [w2v_convert_fact_to_input(lst) for lst in input_lists]
 
-
-        anchor_input = w2v_convert_fact_to_input(anchor_list)
-        pos1_input = w2v_convert_fact_to_input(pos1_list)
-        pos2_input = w2v_convert_fact_to_input(pos2_list)
-        neg_input = w2v_convert_fact_to_input(neg_list)
-
-        anchor_input, pos1_input, pos2_input,neg_input = padding_batch_quadruplet_data_w2v(
-            anchor_input, pos1_input, pos2_input,neg_input)
-        yield anchor_input, pos1_input, pos2_input,neg_input
+        yield padding_batch_quadruplet_data_w2v(
+            input_results[0], input_results[1], input_results[2], input_results[3])
 
 def w2v_convert_fact_to_input(chart_fact_list):
     """
@@ -71,7 +61,8 @@ def w2v_convert_fact_to_input(chart_fact_list):
     batch_struct_one_hot = list()
     max_token_len = 0
     for item_fact in chart_fact_list:
-        tokenized_semantic_token,semantic_pos_list = extract_semantic_info(item_fact)
+        tokenized_semantic_token, semantic_pos_list = extract_semantic_info(
+            item_fact)
         strcuctual_one_hot = extract_structual_info(item_fact)
         if len(tokenized_semantic_token) > max_token_len:
             max_token_len = len(tokenized_semantic_token)
@@ -85,6 +76,7 @@ def w2v_convert_fact_to_input(chart_fact_list):
         "max_token_len": max_token_len
     }
 
+
 def pad_w2v_convert_fact_to_input(chart_fact_list):
     """
         Transform the fact type batch input for model input.
@@ -94,30 +86,32 @@ def pad_w2v_convert_fact_to_input(chart_fact_list):
     batch_struct_one_hot = list()
     max_token_len = 0
     for item_fact in chart_fact_list:
-        tokenized_semantic_token,semantic_pos_list = extract_semantic_info(item_fact)
+        tokenized_semantic_token, semantic_pos_list = extract_semantic_info(
+            item_fact)
         strcuctual_one_hot = extract_structual_info(item_fact)
         if len(tokenized_semantic_token) > max_token_len:
             max_token_len = len(tokenized_semantic_token)
         batch_indexed_tokens.append(tokenized_semantic_token)
         batch_pos.append(semantic_pos_list)
         batch_struct_one_hot.append(strcuctual_one_hot)
-    input={
+    input = {
         "batch_indexed_tokens": batch_indexed_tokens,
         "batch_pos": batch_pos,
         "batch_struct_one_hot": batch_struct_one_hot,
     }
-    return padding_one_batch_data_w2v(25,input)
+    return padding_one_batch_data_w2v(25, input)
 
 
-def padding_batch_quadruplet_data_w2v(anchor_input, pos1_input, pos2_input,neg_input):
+def padding_batch_quadruplet_data_w2v(anchor_input, pos1_input, pos2_input, neg_input):
     max_token_num = max(anchor_input["max_token_len"],
-                        pos1_input["max_token_len"],pos2_input["max_token_len"], neg_input["max_token_len"])
-    max_token_num=25
+                        pos1_input["max_token_len"], pos2_input["max_token_len"], neg_input["max_token_len"])
+    max_token_num = MAX_SEMANTIC_LEN
     anchor_input = padding_one_batch_data_w2v(max_token_num, anchor_input)
     pos1_input = padding_one_batch_data_w2v(max_token_num, pos1_input)
     pos2_input = padding_one_batch_data_w2v(max_token_num, pos2_input)
     neg_input = padding_one_batch_data_w2v(max_token_num, neg_input)
-    return anchor_input, pos1_input, pos2_input,neg_input
+    return anchor_input, pos1_input, pos2_input, neg_input
+
 
 def padding_one_batch_data_w2v(max_token_num, chart_input):
     batch_indexed_tokens = chart_input["batch_indexed_tokens"]
@@ -129,7 +123,7 @@ def padding_one_batch_data_w2v(max_token_num, chart_input):
             for i in range(0, sub):
                 temp_index_token.append("")
         else:
-            temp_index_token=temp_index_token[0:max_token_num]
+            temp_index_token = temp_index_token[0:max_token_num]
         new_batch_indexed_tokens.append(temp_index_token)
 
     batch_pos = chart_input["batch_pos"]
@@ -141,7 +135,7 @@ def padding_one_batch_data_w2v(max_token_num, chart_input):
             for i in range(0, sub):
                 temp_pos.append(0)
         else:
-            temp_pos=temp_pos[0:max_token_num]
+            temp_pos = temp_pos[0:max_token_num]
         new_batch_pos.append(temp_pos)
     return {
         "batch_indexed_tokens": new_batch_indexed_tokens,
