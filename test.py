@@ -11,7 +11,7 @@ from encoder.modeling_chart2vec import *
 
 def test_chart2vec(test_results_save_path,trained_model_path,testing_data_file):
     """
-        training the chart2vec model
+        testing the chart2vec model
         Inputs:
             `model_save_path`: The directory where model iterations are saved during the training process, the overall directory is located under models.
             `training_data_file`: Filename of the training data.
