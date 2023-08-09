@@ -1,4 +1,5 @@
 evaluation/
-models/
 results/
 tensorboard/
+evaluation_new/
+evaluate_chart2vec.py
